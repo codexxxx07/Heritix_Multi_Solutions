@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Heritix Multi Solutions is a modern multi-disciplinary digital partner for ambitious brands. Strategy, design, engineering, and growth – all under one roof."/>
+
+    <title>Heritix Multi Solutions — Digital, Reimagined</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page-shell">
+      <!-- ================= NAVBAR ================= -->
+      <header class="header" id="top">
+        <nav class="navbar">
+          <a
+            href="#hero"
+            class="navbar__brand"
+            aria-label="Heritix Multi Solutions home"
+          >
+            <div class="navbar__logo-mark">H</div>
+            <div class="navbar__logo-text">
+              <span class="navbar__logo-main">Heritix</span>
+              <span class="navbar__logo-sub">Multi Solutions</span>
+            </div>
+          </a>
+
+          <button
+            class="navbar__toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="navbar__links-wrapper">
+            <ul class="navbar__links">
+              <li><a href="#hero" class="nav-link">Home</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#portfolio" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn--small btn--ghost">Book a Call</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ================= HERO ================= -->
+        <section id="hero" class="section hero" aria-labelledby="hero-title">
+          <div class="hero__background">
+            <div class="hero__gradient"></div>
+            <div class="hero__orb hero__orb--primary"></div>
+            <div class="hero__orb hero__orb--accent"></div>
+            <div class="hero__grid-lines"></div>
+          </div>
+
+          <div class="container hero__content">
+            <div class="hero__text reveal-on-scroll">
+              <p class="eyebrow">Multi-disciplinary digital partner</p>
+              <h1 id="hero-title">
+                We design digital experiences that
+                <span class="text-gradient">build lasting trust</span>.
+              </h1>
+              <p class="hero__subtitle">
+                Heritix Multi Solutions blends strategy, design, engineering,
+                and growth to help ambitious brands move with confidence in a
+                fast-evolving world.
+              </p>
+              <div class="hero__actions">
+                <a href="#contact" class="btn">Start your project</a>
+                <button
+                  class="btn btn--ghost hero__secondary-cta"
+                  data-scroll-target="#portfolio"
+                >
+                  Explore recent work
+                </button>
+              </div>
+              <div class="hero__meta">
+                <div>
+                  <span class="meta-label">Avg. ROI delivered</span>
+                  <span class="meta-value">3.8x</span>
+                </div>
+                <div>
+                  <span class="meta-label">Projects delivered</span>
+                  <span class="meta-value">120+</span>
+                </div>
+                <div>
+                  <span class="meta-label">Client satisfaction</span>
+                  <span class="meta-value">98%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__visual reveal-on-scroll">
+              <div class="hero-card hero-card--primary">
+                <h3>Experience, engineered.</h3>
+                <p>
+                  From first touch to lasting loyalty, every interaction is
+                  crafted to feel intentional, effortless, and distinctly
+                  on-brand.
+                </p>
+                <ul class="hero-card__tags" aria-label="Key practice areas">
+                  <li>Digital Strategy</li>
+                  <li>Product Design</li>
+                  <li>Full-stack Build</li>
+                </ul>
+              </div>
+              <div class="hero-card hero-card--overlay">
+                <p class="hero-card__metric">
+                  <span class="counter" data-target="320">0</span>%
+                  <span class="metric-caption">uptick in lead quality</span>
+                </p>
+                <p class="hero-card__note">for B2B clients, year on year*</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__scroll-indicator" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <div class="scroll-mouse">
+              <span></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TRUSTED BY ================= -->
+        <section class="section trusted" aria-label="Clients who trust Heritix">
+          <div class="container">
+            <div class="trusted__header reveal-on-scroll">
+              <p class="eyebrow">Trusted by teams worldwide</p>
+              <h2>Selected partners & clients</h2>
+            </div>
+
+            <div class="trusted__marquee reveal-on-scroll">
+              <div class="trusted__track">
+                <div class="trusted__logo">Northbridge Capital</div>
+                <div class="trusted__logo">Aether Health</div>
+                <div class="trusted__logo">Luminary Labs</div>
+                <div class="trusted__logo">Vertex Mobility</div>
+                <div class="trusted__logo">Solace Fintech</div>
+                <div class="trusted__logo">Nova Retail</div>
+                <!-- duplicated for seamless loop -->
+                <div class="trusted__logo">Northbridge Capital</div>
+                <div class="trusted__logo">Aether Health</div>
+                <div class="trusted__logo">Luminary Labs</div>
+                <div class="trusted__logo">Vertex Mobility</div>
+                <div class="trusted__logo">Solace Fintech</div>
+                <div class="trusted__logo">Nova Retail</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= SERVICES ================= -->
+        <section
+          id="services"
+          class="section services"
+          aria-labelledby="services-title"
+        >
+          <div class="container">
+            <div class="section-heading reveal-on-scroll">
+              <p class="eyebrow">What we do</p>
+              <h2 id="services-title">End-to-end digital solutions.</h2>
+              <p>
+                A multidisciplinary team aligned to one outcome: helping you
+                ship products and platforms your customers actually love to use.
+              </p>
+            </div>
+
+            <div class="grid grid--3 services__grid">
+              <article class="service-card reveal-on-scroll">
+                <div class="service-card__icon">
+                  <span class="icon-dot"></span>
+                </div>
+                <h3>Digital Strategy & Advisory</h3>
+                <p>
+                  Clarity around where to play and how to win — roadmaps,
+                  positioning, and digital operating models crafted for the next
+                  five years, not the last five.
+                </p>
+                <ul>
+                  <li>North star & product vision</li>
+                  <li>Customer journey mapping</li>
+                  <li>Innovation & experimentation</li>
+                </ul>
+              </article>
+
+              <article class="service-card reveal-on-scroll">
+                <div class="service-card__icon">
+                  <span class="icon-grid"></span>
+                </div>
+                <h3>Experience & Interface Design</h3>
+                <p>
+                  Interfaces that feel premium, intuitive, and unmistakably you
+                  — from rapid prototypes to fully realized design systems.
+                </p>
+                <ul>
+                  <li>UX research & prototyping</li>
+                  <li>Design systems & UI libraries</li>
+                  <li>Accessibility-first execution</li>
+                </ul>
+              </article>
+
+              <article class="service-card reveal-on-scroll">
+                <div class="service-card__icon">
+                  <span class="icon-pulse"></span>
+                </div>
+                <h3>Engineering & Growth</h3>
+                <p>
+                  Fast, secure, and scalable builds, paired with ongoing
+                  optimisation so your digital investment compounds over time.
+                </p>
+                <ul>
+                  <li>Full-stack web platforms</li>
+                  <li>Performance & security</li>
+                  <li>Analytics & experimentation</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="section about" aria-labelledby="about-title">
+          <div class="container about__layout">
+            <div class="about__visual reveal-on-scroll" aria-hidden="true">
+              <div class="about-card about-card--primary">
+                <p class="eyebrow">Who we are</p>
+                <h3>Calm, senior partners in a noisy digital world.</h3>
+                <p>
+                  We built Heritix Multi Solutions for leaders who need a
+                  thinking partner as much as they need a delivery team.
+                </p>
+              </div>
+              <div class="about-card about-card--metrics">
+                <div>
+                  <span class="counter" data-target="12">0</span>
+                  <span>years average senior experience</span>
+                </div>
+                <div>
+                  <span class="counter" data-target="6">0</span>
+                  <span>countries collaborated across</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__content reveal-on-scroll">
+              <h2 id="about-title">A compact studio with global reach.</h2>
+              <p>
+                Heritix Multi Solutions brings together strategists, designers,
+                and engineers who have shipped products for venture-backed
+                startups and established enterprises alike.
+              </p>
+              <p>
+                We embed with your team, ask the difficult questions, and design
+                clear, pragmatic paths forward. No inflated buzzwords, just
+                focused collaboration that respects your time and your brand.
+              </p>
+              <p>
+                From first discovery workshop to long-term optimisation, we’re
+                structured to stay close to the work and accountable for
+                outcomes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section class="section why" aria-labelledby="why-title">
+          <div class="container">
+            <div class="section-heading reveal-on-scroll">
+              <p class="eyebrow">Why partners choose Heritix</p>
+              <h2 id="why-title">A model built around trust.</h2>
+            </div>
+
+            <div class="why__layout">
+              <div class="why__features">
+                <article class="why-card reveal-on-scroll">
+                  <div class="why-card__icon">
+                    <span class="icon-shield"></span>
+                  </div>
+                  <h3>Senior-first team</h3>
+                  <p>
+                    Work directly with specialists who have shipped complex
+                    platforms and understand the nuance of enterprise
+                    environments.
+                  </p>
+                </article>
+
+                <article class="why-card reveal-on-scroll">
+                  <div class="why-card__icon">
+                    <span class="icon-loop"></span>
+                  </div>
+                  <h3>Outcome over output</h3>
+                  <p>
+                    We measure success by the stories your customers tell, not
+                    how many features we can ship in a sprint.
+                  </p>
+                </article>
+
+                <article class="why-card reveal-on-scroll">
+                  <div class="why-card__icon">
+                    <span class="icon-spark"></span>
+                  </div>
+                  <h3>Clarity in every interaction</h3>
+                  <p>
+                    Transparent roadmaps, thoughtful documentation, and a rhythm
+                    of communication that keeps your stakeholders aligned.
+                  </p>
+                </article>
+              </div>
+
+              <div
+                class="why__stats reveal-on-scroll"
+                aria-label="Studio performance highlights"
+              >
+                <div class="stat">
+                  <span class="stat__value">
+                    <span class="counter" data-target="92">0</span>%
+                  </span>
+                  <span class="stat__label"
+                    >clients retain us beyond first engagement</span
+                  >
+                </div>
+                <div class="stat">
+                  <span class="stat__value">
+                    <span class="counter" data-target="45">0</span> days
+                  </span>
+                  <span class="stat__label"
+                    >average time from brief to launch</span
+                  >
+                </div>
+                <div class="stat">
+                  <span class="stat__value">
+                    <span class="counter" data-target="28">0</span>
+                  </span>
+                  <span class="stat__label">industries supported to date</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PROCESS ================= -->
+        <section class="section process" aria-labelledby="process-title">
+          <div class="container">
+            <div class="section-heading reveal-on-scroll">
+              <p class="eyebrow">How we work</p>
+              <h2 id="process-title">
+                A clear, collaborative process from day one.
+              </h2>
+            </div>
+
+            <div class="process__timeline">
+              <article class="process-step reveal-on-scroll">
+                <span class="process-step__index">01</span>
+                <h3>Discover & align</h3>
+                <p>
+                  We immerse ourselves in your context, aligning stakeholders on
+                  objectives, success metrics, and key constraints.
+                </p>
+              </article>
+              <article class="process-step reveal-on-scroll">
+                <span class="process-step__index">02</span>
+                <h3>Design & prototype</h3>
+                <p>
+                  Fast-moving prototypes and workshops to test assumptions early
+                  and de-risk major decisions.
+                </p>
+              </article>
+              <article class="process-step reveal-on-scroll">
+                <span class="process-step__index">03</span>
+                <h3>Build & refine</h3>
+                <p>
+                  Engineering sprints focused on stability, performance, and the
+                  details that create a genuinely premium experience.
+                </p>
+              </article>
+              <article class="process-step reveal-on-scroll">
+                <span class="process-step__index">04</span>
+                <h3>Launch & evolve</h3>
+                <p>
+                  Launch is the starting line. We monitor, optimise, and help
+                  your team internalise the new capabilities.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PORTFOLIO ================= -->
+        <section
+          id="portfolio"
+          class="section portfolio"
+          aria-labelledby="portfolio-title"
+        >
+          <div class="container">
+            <div class="section-heading reveal-on-scroll">
+              <p class="eyebrow">Selected work</p>
+              <h2 id="portfolio-title">Recent projects & collaborations.</h2>
+            </div>
+
+            <div
+              class="portfolio__filters reveal-on-scroll"
+              role="tablist"
+              aria-label="Filter projects"
+            >
+              <button
+                class="filter-btn filter-btn--active"
+                data-filter="all"
+                role="tab"
+              >
+                All
+              </button>
+              <button class="filter-btn" data-filter="strategy" role="tab">
+                Strategy
+              </button>
+              <button class="filter-btn" data-filter="product" role="tab">
+                Product
+              </button>
+              <button class="filter-btn" data-filter="brand" role="tab">
+                Brand
+              </button>
+            </div>
+
+            <div class="grid grid--3 portfolio__grid">
+              <article
+                class="portfolio-card reveal-on-scroll"
+                data-category="product"
+              >
+                <div class="portfolio-card__image">
+                  <span class="badge">SaaS Platform</span>
+                </div>
+                <div class="portfolio-card__body">
+                  <h3>Helio Metrics (Demo)</h3>
+                  <p>
+                    Reimagined analytics dashboard that increased activation by
+                    42% for a B2B SaaS provider.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="portfolio-card reveal-on-scroll"
+                data-category="brand"
+              >
+                <div class="portfolio-card__image portfolio-card__image--alt">
+                  <span class="badge">Brand & Web</span>
+                </div>
+                <div class="portfolio-card__body">
+                  <h3>Kindred Studio (Demo)</h3>
+                  <p>
+                    A calm, editorial web presence for a boutique architecture
+                    practice expanding internationally.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="portfolio-card reveal-on-scroll"
+                data-category="strategy"
+              >
+                <div class="portfolio-card__image portfolio-card__image--dark">
+                  <span class="badge">Growth Strategy</span>
+                </div>
+                <div class="portfolio-card__body">
+                  <h3>Orion Mobility (Demo)</h3>
+                  <p>
+                    Multi-year digital transformation roadmap aligning product,
+                    sales, and service teams.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="portfolio-card reveal-on-scroll"
+                data-category="product"
+              >
+                <div class="portfolio-card__image">
+                  <span class="badge">E-commerce</span>
+                </div>
+                <div class="portfolio-card__body">
+                  <h3>Nova Retail Collective (Demo)</h3>
+                  <p>
+                    High-conversion storefront with tailored merchandising for
+                    premium lifestyle brands.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="portfolio-card reveal-on-scroll"
+                data-category="brand"
+              >
+                <div class="portfolio-card__image portfolio-card__image--alt">
+                  <span class="badge">Rebrand</span>
+                </div>
+                <div class="portfolio-card__body">
+                  <h3>Beacon Insurance (Demo)</h3>
+                  <p>
+                    A refreshed digital identity centred on clarity, confidence,
+                    and human support.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="portfolio-card reveal-on-scroll"
+                data-category="strategy"
+              >
+                <div class="portfolio-card__image portfolio-card__image--dark">
+                  <span class="badge">Service Blueprint</span>
+                </div>
+                <div class="portfolio-card__body">
+                  <h3>Aether Health (Demo)</h3>
+                  <p>
+                    Service design and digital patient experience for a
+                    fast-growing health network.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TESTIMONIALS ================= -->
+        <section
+          class="section testimonials"
+          aria-labelledby="testimonials-title"
+        >
+          <div class="container">
+            <div class="section-heading reveal-on-scroll">
+              <p class="eyebrow">Testimonials</p>
+              <h2 id="testimonials-title">What our clients say.</h2>
+            </div>
+
+            <div class="testimonials__slider reveal-on-scroll">
+              <div class="testimonials__track">
+                <figure class="testimonial is-active">
+                  <blockquote>
+                    “Heritix quickly became an extension of our own team. The
+                    level of strategic thinking combined with flawless execution
+                    is rare.”
+                  </blockquote>
+                  <figcaption>
+                    <span class="testimonial__name">Amara N.</span>
+                    <span class="testimonial__role"
+                      >VP Digital, Orion Mobility</span
+                    >
+                  </figcaption>
+                </figure>
+
+                <figure class="testimonial">
+                  <blockquote>
+                    “From the first workshop to go-live, we felt in very safe
+                    hands. Our new platform has changed the way clients
+                    experience our brand.”
+                  </blockquote>
+                  <figcaption>
+                    <span class="testimonial__name">Daniel K.</span>
+                    <span class="testimonial__role"
+                      >Managing Director, Beacon Insurance</span
+                    >
+                  </figcaption>
+                </figure>
+
+                <figure class="testimonial">
+                  <blockquote>
+                    “They ask the right questions, push our thinking, and then
+                    deliver beyond the brief. It’s uncommon to find this balance
+                    of creativity and rigour.”
+                  </blockquote>
+                  <figcaption>
+                    <span class="testimonial__name">Priya S.</span>
+                    <span class="testimonial__role"
+                      >Founder, Kindred Studio</span
+                    >
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div
+                class="testimonials__nav"
+                aria-label="Testimonial navigation"
+              >
+                <button
+                  class="dot is-active"
+                  data-slide="0"
+                  aria-label="Show first testimonial"
+                ></button>
+                <button
+                  class="dot"
+                  data-slide="1"
+                  aria-label="Show second testimonial"
+                ></button>
+                <button
+                  class="dot"
+                  data-slide="2"
+                  aria-label="Show third testimonial"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="section cta" aria-labelledby="cta-title">
+          <div class="container cta__content reveal-on-scroll">
+            <div>
+              <p class="eyebrow">Ready when you are</p>
+              <h2 id="cta-title">
+                Let’s design the next chapter of your digital story.
+              </h2>
+              <p>
+                Share a little about your ambitions, timelines, and constraints.
+                We’ll respond with a considered point of view — not a generic
+                sales deck.
+              </p>
+            </div>
+            <div class="cta__actions">
+              <a href="#contact" class="btn">Book a discovery call</a>
+              <button class="btn btn--ghost" data-scroll-target="#services">
+                View capabilities
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section
+          id="contact"
+          class="section contact"
+          aria-labelledby="contact-title"
+        >
+          <div class="container contact__layout">
+            <div class="contact__content reveal-on-scroll">
+              <p class="eyebrow">Contact</p>
+              <h2 id="contact-title">Tell us about your next move.</h2>
+              <p>
+                Share the essentials and we'll come back with thoughtful next
+                steps within two business days.
+              </p>
+
+              <ul class="contact__details">
+                <li>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:hello@heritixmultisolutions.com"
+                    >hello@heritixmultisolutions.com</a
+                  >
+                </li>
+                <li>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+10000000000">+91 xxxxx xxxxx</a>
+                </li>
+                <li>
+                  <span class="contact-label">Location</span>
+                  <span>Global clients, remote-first studio</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__form-wrapper reveal-on-scroll">
+              <form class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="How should we address you?"
+                      required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="company">Company</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Where do you work?"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="message">Project details</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Timelines, goals, and anything else we should know."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--full-width">
+                  Send message
+                </button>
+                <p class="form-footnote">
+                  By submitting this form you agree that we may contact you
+                  about your enquiry. We never share your details with third
+                  parties.
+                </p>
+              </form>
+
+              <div class="map-placeholder" aria-label="Map placeholder">
+                <div class="map-placeholder__inner">
+                  <span class="eyebrow">Studio footprint</span>
+                  <p>
+                    Serving clients across Europe, North America, and Asia
+                    Pacific.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="footer" aria-label="Site footer">
+        <div class="container footer__layout">
+          <div class="footer__brand">
+            <div class="navbar__logo-mark footer__logo-mark">H</div>
+            <div>
+              <p class="footer__title">Heritix Multi Solutions</p>
+              <p class="footer__tagline">
+                Digital experiences with lasting impact.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h3>Navigate</h3>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3>Connect</h3>
+              <ul class="footer__social">
+                <li>
+                  <a href="#" aria-label="Visit our LinkedIn profile"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="#" aria-label="Visit our Behance profile">Behance</a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Visit our Dribbble profile"
+                    >Dribbble</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="container footer__bottom-inner">
+            <p>
+              © <span id="year"></span> Heritix Multi Solutions. All rights
+              reserved.
+            </p>
+            <p class="footer__legal">
+              Designed & built for demonstration purposes.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
