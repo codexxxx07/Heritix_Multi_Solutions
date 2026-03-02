@@ -227,16 +227,26 @@ ul {
 }
 
 .navbar__logo-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 0.9rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   background: conic-gradient(from 160deg, #7b5cff, #00f5c4, #78a9ff, #7b5cff);
   display: grid;
   place-items: center;
+  overflow: hidden;
   color: #050712;
   font-weight: 700;
   font-size: 1.1rem;
   box-shadow: 0 0 0 1px rgba(2, 5, 22, 0.9), 0 14px 40px rgba(0, 0, 0, 0.7);
+}
+
+.navbar__logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: inherit;
 }
 
 .navbar__logo-text {
@@ -1482,8 +1492,8 @@ ul {
 }
 
 .footer__logo-mark {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
 }
 
 .footer__title {
