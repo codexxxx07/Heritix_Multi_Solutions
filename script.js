@@ -204,6 +204,64 @@ function setFooterYear() {
   yearSpan.textContent = String(new Date().getFullYear());
 }
 
+function setupHeroTyping() {
+  const span = document.querySelector("#hero-title .text-gradient");
+  if (!span) return;
+
+  const baseText = span.textContent || "";
+  const anchor = "lasting trust";
+  const idx = baseText.toLowerCase().indexOf(anchor);
+
+  let prefix = "";
+  if (idx >= 0) {
+    prefix = baseText.slice(0, idx);
+  } else {
+    const lastSpace = baseText.lastIndexOf(" ");
+    prefix = lastSpace >= 0 ? baseText.slice(0, lastSpace + 1) : "";
+  }
+
+  const phrases = [
+    "lasting trust",
+    "powerful brands",
+    "digital growth",
+    "future-ready solutions",
+  ];
+
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const typeSpeed = 70;
+  const deleteSpeed = 45;
+  const endPause = 1200;
+  const betweenPause = 400;
+
+  const tick = () => {
+    const full = phrases[phraseIndex];
+    if (!isDeleting) {
+      charIndex = Math.min(charIndex + 1, full.length);
+    } else {
+      charIndex = Math.max(charIndex - 1, 0);
+    }
+
+    span.textContent = prefix + full.slice(0, charIndex);
+
+    let timeout = isDeleting ? deleteSpeed : typeSpeed;
+    if (!isDeleting && charIndex === full.length) {
+      timeout = endPause;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      timeout = betweenPause;
+    }
+    window.setTimeout(tick, timeout);
+  };
+
+  span.textContent = prefix;
+  tick();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupScrollButtons();
   setupStickyNavbar();
@@ -213,4 +271,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setupPortfolioFilter();
   setupTestimonialsSlider();
   setFooterYear();
+  setupHeroTyping();
 });
