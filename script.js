@@ -231,7 +231,7 @@ function setupHeroTyping() {
   let charIndex = 0;
   let isDeleting = false;
 
-  const typeSpeed = 70;
+  const typeSpeed = 80;
   const deleteSpeed = 45;
   const endPause = 1200;
   const betweenPause = 400;
